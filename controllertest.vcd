@@ -1,0 +1,286 @@
+$date
+	Fri Jul 17 13:04:24 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module controllertest_tb $end
+$var wire 1 ! regwrite $end
+$var wire 1 " regdst $end
+$var wire 2 # pcsrc [1:0] $end
+$var wire 1 $ pcen $end
+$var wire 1 % memwrite $end
+$var wire 1 & memtoreg $end
+$var wire 1 ' irwrite $end
+$var wire 1 ( iord $end
+$var wire 2 ) alusrcb [1:0] $end
+$var wire 1 * alusrca $end
+$var wire 4 + alucontrol [3:0] $end
+$var reg 1 , clk $end
+$var reg 6 - funct [5:0] $end
+$var reg 6 . op [5:0] $end
+$var reg 1 / reset $end
+$var reg 1 0 zero $end
+$scope module c $end
+$var wire 1 , clk $end
+$var wire 6 1 funct [5:0] $end
+$var wire 6 2 op [5:0] $end
+$var wire 1 $ pcen $end
+$var wire 1 / reset $end
+$var wire 1 0 zero $end
+$var wire 1 ! regwrite $end
+$var wire 1 " regdst $end
+$var wire 1 3 pcwrite $end
+$var wire 2 4 pcsrc [1:0] $end
+$var wire 1 % memwrite $end
+$var wire 1 & memtoreg $end
+$var wire 1 ' irwrite $end
+$var wire 1 ( iord $end
+$var wire 1 5 branch $end
+$var wire 2 6 alusrcb [1:0] $end
+$var wire 1 * alusrca $end
+$var wire 2 7 aluop [1:0] $end
+$var wire 4 8 alucontrol [3:0] $end
+$scope module ad $end
+$var wire 6 9 funct [5:0] $end
+$var wire 2 : aluop [1:0] $end
+$var reg 4 ; alucontrol [3:0] $end
+$upscope $end
+$scope module md $end
+$var wire 1 , clk $end
+$var wire 6 < op [5:0] $end
+$var wire 1 / reset $end
+$var wire 1 ! regwrite $end
+$var wire 1 " regdst $end
+$var wire 1 3 pcwrite $end
+$var wire 2 = pcsrc [1:0] $end
+$var wire 1 % memwrite $end
+$var wire 1 & memtoreg $end
+$var wire 1 ' irwrite $end
+$var wire 1 ( iord $end
+$var wire 1 5 branch $end
+$var wire 2 > alusrcb [1:0] $end
+$var wire 1 * alusrca $end
+$var wire 2 ? aluop [1:0] $end
+$var reg 15 @ controls [14:0] $end
+$var reg 4 A nextstate [3:0] $end
+$var reg 4 B state [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module mips $end
+$var wire 32 C adr [31:0] $end
+$var wire 1 D clk $end
+$var wire 6 E funct [5:0] $end
+$var wire 6 F op [5:0] $end
+$var wire 32 G readdata [31:0] $end
+$var wire 1 H reset $end
+$var wire 32 I writedata [31:0] $end
+$var wire 1 J zero $end
+$var wire 1 K regwrite $end
+$var wire 1 L regdst $end
+$var wire 2 M pcsrc [1:0] $end
+$var wire 1 N pcen $end
+$var wire 1 O memwrite $end
+$var wire 1 P memtoreg $end
+$var wire 1 Q irwrite $end
+$var wire 1 R iord $end
+$var wire 2 S alusrcb [1:0] $end
+$var wire 1 T alusrca $end
+$var wire 4 U alucontrol [3:0] $end
+$scope module c $end
+$var wire 1 D clk $end
+$var wire 6 V funct [5:0] $end
+$var wire 6 W op [5:0] $end
+$var wire 1 N pcen $end
+$var wire 1 H reset $end
+$var wire 1 J zero $end
+$var wire 1 K regwrite $end
+$var wire 1 L regdst $end
+$var wire 1 X pcwrite $end
+$var wire 2 Y pcsrc [1:0] $end
+$var wire 1 O memwrite $end
+$var wire 1 P memtoreg $end
+$var wire 1 Q irwrite $end
+$var wire 1 R iord $end
+$var wire 1 Z branch $end
+$var wire 2 [ alusrcb [1:0] $end
+$var wire 1 T alusrca $end
+$var wire 2 \ aluop [1:0] $end
+$var wire 4 ] alucontrol [3:0] $end
+$scope module ad $end
+$var wire 6 ^ funct [5:0] $end
+$var wire 2 _ aluop [1:0] $end
+$var reg 4 ` alucontrol [3:0] $end
+$upscope $end
+$scope module md $end
+$var wire 1 D clk $end
+$var wire 6 a op [5:0] $end
+$var wire 1 H reset $end
+$var wire 1 K regwrite $end
+$var wire 1 L regdst $end
+$var wire 1 X pcwrite $end
+$var wire 2 b pcsrc [1:0] $end
+$var wire 1 O memwrite $end
+$var wire 1 P memtoreg $end
+$var wire 1 Q irwrite $end
+$var wire 1 R iord $end
+$var wire 1 Z branch $end
+$var wire 2 c alusrcb [1:0] $end
+$var wire 1 T alusrca $end
+$var wire 2 d aluop [1:0] $end
+$var reg 15 e controls [14:0] $end
+$var reg 4 f nextstate [3:0] $end
+$var reg 4 g state [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx g
+b0 f
+bx e
+bx d
+bx c
+bx b
+bz a
+bx `
+bx _
+bz ^
+bx ]
+bx \
+bx [
+xZ
+bx Y
+xX
+bz W
+bz V
+bx U
+xT
+bx S
+xR
+xQ
+xP
+xO
+xN
+bx M
+xL
+xK
+zJ
+bz I
+zH
+bz G
+bz F
+bz E
+zD
+bz C
+b0 B
+b1 A
+b101000000010000 @
+b0 ?
+b1 >
+b0 =
+bx <
+b0 ;
+b0 :
+bx 9
+b0 8
+b0 7
+b1 6
+05
+b0 4
+13
+bx 2
+bx 1
+x0
+1/
+bx .
+bx -
+0,
+b0 +
+0*
+b1 )
+0(
+1'
+0&
+0%
+1$
+b0 #
+0"
+0!
+$end
+#1
+b100011 .
+b100011 2
+b100011 <
+0/
+#10
+0$
+03
+0'
+b11 )
+b11 6
+b11 >
+b110000 @
+b10 A
+b1 B
+1,
+#20
+0,
+#30
+1*
+b10 )
+b10 6
+b10 >
+b10000100000 @
+b11 A
+b10 B
+1,
+#40
+0,
+#50
+0*
+b0 )
+b0 6
+b0 >
+b1 #
+b1 4
+b1 =
+b100 @
+b100 A
+b11 B
+1,
+#60
+0,
+#70
+1!
+1&
+b0 #
+b0 4
+b0 =
+b100010000000 @
+b0 A
+b100 B
+1,
+#80
+0,
+#90
+1$
+13
+1'
+0!
+0&
+b1 )
+b1 6
+b1 >
+b101000000010000 @
+b1 A
+b0 B
+1,
+#100
+0,
+#101
