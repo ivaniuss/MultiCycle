@@ -148,7 +148,7 @@ module maindec(input        clk, reset,
       DECODE:  controls <= 15'h0030;
     // your code goes here
       MEMADR  :  controls <= 15'h0420;
-      MEMRD   :  controls <= 15'b0100;
+      MEMRD   :  controls <= 15'h0100;
       MEMWB   :  controls <= 15'h0880;
       MEMWR   :  controls <= 15'h2100;
       RTYPEEX :  controls <= 15'h0402;

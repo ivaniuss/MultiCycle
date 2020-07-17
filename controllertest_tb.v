@@ -10,25 +10,23 @@ module controllertest_tb;
 
     initial
     begin
-        clk = 1'b0;
+        clk = 1'b1;
         forever
-            #10 clk = ~clk;
+            #5 clk = ~clk;
     end
 
     initial
     begin
         #0 reset = 1'b1; #1 reset = 1'b0;
         //------------------------------------------------- 
-        op = 6'b100011; funct = 6'bxxxxxx; zero = 1'bx;
-        /*@ (posedge clk) //LW: fetch decode memadr memrd memwb
-        op = 6'b101011; funct = 6'bxxxxxx; zero = 1'bx; @ (posedge clk) //SW: memwr
-        op = 6'b000000; funct = 6'b100000; zero = 1'bx; @ (posedge clk) //R-type: rtypeEx rtypewb
-        op = 6'b000100; funct = 6'bxxxxxx; zero = 1'b1; @ (posedge clk) //BEQ: beqex
-        op = 6'b001000; funct = 6'bxxxxxx; zero = 1'bx; @ (posedge clk) //ADDI: addiex addiwb
-        op = 6'b000010; funct = 6'bxxxxxx; zero = 1'bx; @ (posedge clk) //J: jex
-        */
+        op = 6'b100011; funct = 6'bxxxxxx; zero = 1'bx; #50 //LW: fetch decode memadr memrd memwb
+        op = 6'b101011; funct = 6'bxxxxxx; zero = 1'bx; #40 //SW: memwr
+        op = 6'b000000; funct = 6'b100000; zero = 1'bx; #40 //R-type: rtypeEx rtypewb
+        op = 6'b000100; funct = 6'bxxxxxx; zero = 1'b1; #30 //BEQ: beqex
+        op = 6'b001000; funct = 6'bxxxxxx; zero = 1'bx; #40 //ADDI: addiex addiwb
+        op = 6'b000010; funct = 6'bxxxxxx; zero = 1'bx; #30 //J: jex
         
-        #100 $finish;
+        $finish;
     end
     controller c(clk, reset, op, funct, zero,
                pcen, memwrite, irwrite, regwrite,
